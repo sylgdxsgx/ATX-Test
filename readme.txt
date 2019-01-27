@@ -16,4 +16,6 @@ python3.6.0
     
 截图： 
 python -m uiautomator2 screenshot 192.168.1.105 ssss.jpg
+
+截图：d.screenshot("home.jpg")
     
