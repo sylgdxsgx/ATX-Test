@@ -1,0 +1,44 @@
+1.git网站上复制Git项目的<url>
+git config --global user.name sylgdxsgx
+git config --global user.email 1290693568@qq.com
+2.Windows上某空路径下执行：Git init
+3.执行：git clone <url>
+4.进入克隆到本地的项目：cd firstproject
+5.复制文件到该版本库下
+6.执行：Git add .
+7.执行：Git commit -m ''
+8.执行：Git push
+
+
+1.本地建立Git仓库
+2.cd进入本地项目根目录，执行 Git init
+3.添加文件后，Git add .
+4.Git commit -m 'xxx'
+5.本地仓库关联到GitHub上，Git remote add 仓库名 https://github.com/sylgdxsgx/FFF.git如果 remote origin already exists 则先Git remote rm 仓库名
+6.git push -u 仓库名 master 完成。如果仓库有readme.md文件，这步会失败，则执行下面2步
+7.Git pull--rebase 仓库名 master
+8.git push -u 仓库名 master
+10.后面就直接Git push|pull  就可以了
+
+**git 命令
+git config --global user.name xxxx
+git config --global user.email xxxxx
+
+git init            创建git仓库
+git clone <url>     拷贝一个Git仓库到本地
+git clone <source repository> <destination repository>      与从远程拉取仓库不同，路径的最后不用写 .git 来表明这是一个仓库
+git add filename|.  将文件添加到缓存
+git commit          将缓存添加到仓库
+git push [-u][仓库名][分支名]   将本地库中的最新信息发送给远程库
+git pull [--rebase][仓库名][分支名]    从远程获取最新版本到本地，并自动merge
+git fetch           从远程获取最新版本到本地，不会自动merge
+git merge           从指定的commit(s)合并到当前分支，用来合并两个分支
+git status          查看状态
+git diff            查看尚未缓存的改动
+git diff --cached   查看已缓存的改动
+git reset HEAD filename 取消文件缓存
+git rm filename     从git中移除文件   （如果文件被直接删除了，那也要执行该语句，才能commit成功）
+git rm -f filename  强制删除（删除之前修改过并且已经放到暂存区域的文件）
+git rm --cached filename    把文件从暂存区域移除，但仍然希望保留在当前工作目录中
+git rm -r *         进入某个目录中，执行此语句，会删除该目录下的所有文件和子目录
+git mv filename filename.bak    与Linux的mv同
