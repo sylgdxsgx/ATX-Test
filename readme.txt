@@ -11,9 +11,11 @@ python3.6.0
     安装获取元素库weditor：pip install --pre --upgrade weditor
 
 
-3.初始化设备（每次连接手机都要执行一遍该命令来启动atx-agent）
+3.初始化设备（初始化一次即可）:
     adb devices 连接成功后：python -m uiautomator2 init
     
+4.启动atxagent(当手机的atx-agent被关闭后，可以通过该命令启动):
+    adb -s 10.250.90.81:5555 shell /data/local/tmp/atx-agent server -d
     
 截图： 
 python -m uiautomator2 screenshot 192.168.1.105 ssss.jpg
