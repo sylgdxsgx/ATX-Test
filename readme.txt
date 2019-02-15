@@ -9,6 +9,8 @@ python3.6.0
 2.安装atx:pip install -U --pre uiautomator2  
     如果失败则：pip install -U --pre uiautomator2 -i https://pypi.doubanio.com/simple
     安装获取元素库weditor：pip install --pre --upgrade weditor
+    运行python -m weditor ，自动打开一个网页 http://atx.open.netease.com （而python -mweditor这个命令则本地开放了HTTP的接口，前端去跟本地的服务去通信）
+    
 
 
 3.初始化设备（初始化一次即可）:
