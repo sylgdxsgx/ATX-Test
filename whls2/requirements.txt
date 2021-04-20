@@ -15,7 +15,7 @@ pip==19.0.1
 progress==1.4
 psutil==5.5.0
 pure-python-adb==0.1.6.dev0
-py==1.7.0
+py==1.10.0
 requests==2.21.0
 retry==0.9.2
 selenium==3.141.0
